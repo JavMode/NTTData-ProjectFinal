@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "69b53f27-82f0-44f8-9c3e-bf945fe69570",
+		"name": "NTTData_Transaccion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23995194"
+	},
+	"item": [
+		{
+			"name": "Registrar un depósito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionType\": \"Depósito\",\r\n    \"amount\": 100.0,\r\n    \"account\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/transacciones/deposito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"transacciones",
+						"deposito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar un retiro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionType\": \"Retiro\",\r\n    \"amount\": 100.0,\r\n    \"account\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/transacciones/retiro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"transacciones",
+						"retiro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar una transferencia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionType\": \"Transferencia\",\r\n    \"amount\": 100.0,\r\n    \"account\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/transacciones/transferencia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"transacciones",
+						"transferencia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/transactions/transacciones/historial",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transactions",
+						"transacciones",
+						"historial"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
