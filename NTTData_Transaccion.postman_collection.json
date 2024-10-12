@@ -100,7 +100,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Obtener historial de transacciones",
 			"request": {
 				"method": "GET",
 				"header": [],
